@@ -11,7 +11,7 @@
 }
 body {
   width: 100%;
-  height: 100%;
+  height: 100vh;
 }
 .introductory-section {
   background: url(./images/bg-desktop.svg) no-repeat center center fixed;
@@ -73,12 +73,14 @@ footer .attribution a:nth-child(2):hover {
 }
 
 @media (min-width: 960px) {
-  .introductory-section {
-    height: 100vh;
-  }
   .social-icons {
     position: absolute;
     bottom: 0;
     right: 50px;
+  }
+}
+@media (max-width: 567px) {
+  .social-icons {
+    margin-top: 20px;
   }
 }
